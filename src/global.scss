@@ -37,3 +37,36 @@
     justify-content: center;
     align-items: center;
 }
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.button{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-input{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-content.background{
+    --background: url(../img/fondo-amarillo-negro-elemento-patron-semitono-punto-fondo-grunge-pincel-abstracto_64718-1048.webp) 0 0/100% 100% no-repeat;
+    font-family: 'Roboto', 'Sans serif';
+}
