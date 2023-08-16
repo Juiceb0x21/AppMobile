@@ -15,7 +15,7 @@ export class RegisterPage implements OnInit {
 
   register() {
     
-    this.router.navigate(['principal'])
+    this.router.navigate(['home'])
   }
 
   login() {
