@@ -3,9 +3,12 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Usuario</ion-list-header >
-          <ion-note>al.pavezf@duocuc.cl</ion-note>
-
+          <div>
+            <ion-avatar>
+              <img class="img" alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+            </ion-avatar>
+          </div>
+          <h6>al.pavezf</h6>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -15,7 +18,9 @@
         </ion-list>
 
         <ion-list id="labels-list">
-          <ion-list-header>App</ion-list-header>
+          <ion-list-header>App creada por: 
+
+          </ion-list-header>
         </ion-list>
       </ion-content>
     </ion-menu>
