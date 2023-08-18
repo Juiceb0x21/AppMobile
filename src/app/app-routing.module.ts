@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'historial-registros',
+    loadChildren: () => import('./pages/historial-registros/historial-registros.module').then( m => m.HistorialRegistrosPageModule)
   }
 
 

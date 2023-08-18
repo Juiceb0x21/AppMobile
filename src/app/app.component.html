@@ -5,10 +5,14 @@
         <ion-list id="inbox-list">
           <div>
             <ion-avatar>
-              <img class="img" alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+              <ion-chip>
+                <ion-avatar>
+                  <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                </ion-avatar>
+                <ion-label>Alex Pavez</ion-label>
+              </ion-chip>
             </ion-avatar>
           </div>
-          <h6>al.pavezf</h6>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -19,7 +23,7 @@
 
         <ion-list id="labels-list">
           <ion-list-header>App creada por: 
-
+            Bryan Pinto, Alex Oliva y Alex Pavez ©
           </ion-list-header>
         </ion-list>
       </ion-content>

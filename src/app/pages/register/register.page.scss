@@ -17,10 +17,3 @@ button{
     box-shadow: 6px 6px 12px #c5c5c5,
     -6px -6px -12px #ffffff;
 }
-button::before{
-    content: '';
-    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
-}
