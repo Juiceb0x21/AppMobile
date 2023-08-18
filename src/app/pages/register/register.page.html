@@ -1,7 +1,7 @@
 
-<ion-content class="background">
+<ion-content>
   <div class="container">
-    <ion-card>
+    <ion-card class="card">
         <ion-card-header class="centr">
           <ion-card-title>Bienvenido!</ion-card-title>
         </ion-card-header>
@@ -29,20 +29,10 @@
             </ion-input>
           </ion-item>
         </ion-list>
-    
+        <ion-button class="button" color="warning" (click)=register() shape="round">Registrarse</ion-button>
+        <h6>¿ya tienes cuenta?</h6>
+        <ion-button class="button" (click)="login()" color="dark" shape="round">Iniciar sesion</ion-button>
       </ion-card-content>
-      <ion-button class="button" color="warning" (click)=register() shape="round">Registrarse</ion-button>
-
-      <br>
-
-      <h6>¿ya tienes cuenta?</h6>
-    
-      <br>
-
-      <ion-button class="button" (click)="login()" color="dark" shape="round">Iniciar sesion</ion-button>
-
-      <br>
-
     </ion-card>
   </div>
 </ion-content>

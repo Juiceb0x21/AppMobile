@@ -9,33 +9,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>detalle</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    <ion-button class="margin" [routerLink]="['/detalle']" shape="round" color="warning">Ver mas</ion-button> 
-    </ion-card-content>
-  </ion-card>
+<ion-content>
+  <div class="img">
+    <img src="assets/img/qr.jpg"/>
+      <ion-card-header class="centr">
+        <ion-card-title>Alex</ion-card-title>
+        <ion-card-subtitle>al.pavezf@duocuc.cl</ion-card-subtitle>
+      </ion-card-header>
+      
+      <ion-card-content class="centr">
+        El usuario se registro hoy a las 9:45 A.M
+      </ion-card-content>
+  </div>
 
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-icon name="camera"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="radio">
-        <ion-icon name="image"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="library">
-        <ion-icon name="library"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="search">
-        <ion-icon name="settings"></ion-icon>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+  <ion-fab class="padd" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon (click)="login()" name="close-circle"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon (click)="perfil()" name="person"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

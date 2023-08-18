@@ -11,7 +11,6 @@ export class AppComponent {
     { title: 'Ubicacion', url: 'ubicacion', icon: 'map' },
     { title: 'Detalle', url: 'detalle', icon: 'podium' },
     { title: 'Asistencia', url: 'asistencia', icon: 'calendar' },
-    { title: 'Cerrar sesion', url: 'login', icon: 'close-circle' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
