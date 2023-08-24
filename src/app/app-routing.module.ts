@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'detalle',
     loadChildren: () => import('./pages/detalle/detalle.module').then( m => m.DetallePageModule)
   },
@@ -49,7 +50,16 @@ const routes: Routes = [
   {
     path: 'historial-registros',
     loadChildren: () => import('./pages/historial-registros/historial-registros.module').then( m => m.HistorialRegistrosPageModule)
+  },
+  {
+    path: 'cuentas',
+    loadChildren: () => import('./pages/cuentas/cuentas.module').then( m => m.CuentasPageModule)
+  },
+  {
+    path: 'agrear',
+    loadChildren: () => import('./pages/cuentas/agrear/agrear.module').then( m => m.AgrearPageModule)
   }
+
 
 
 ];
