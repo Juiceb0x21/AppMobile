@@ -58,7 +58,11 @@ const routes: Routes = [
   {
     path: 'agrear',
     loadChildren: () => import('./pages/cuentas/agrear/agrear.module').then( m => m.AgrearPageModule)
+  },  {
+    path: 'home-clone',
+    loadChildren: () => import('./pages/home-clone/home-clone.module').then( m => m.HomeClonePageModule)
   }
+
 
 
 
