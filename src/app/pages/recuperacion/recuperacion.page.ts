@@ -36,7 +36,7 @@ export class RecuperacionPage implements OnInit {
       } else {
         const alert = await this.alertController.create({
           header: 'Correo no valido',
-          message: 'El correo que escribio no es valido',
+          message: 'El correo que escribio no es valido o no se encuentra registrado.',
           buttons: ['Aceptar'],
         });
         await alert.present()
@@ -56,6 +56,5 @@ export class RecuperacionPage implements OnInit {
     toast.present()
   }
 
-  
 
 }

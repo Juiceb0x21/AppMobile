@@ -24,7 +24,6 @@ export class LoginPage implements OnInit {
   }
 
   
-
   async login() {
     var f = this.formularioLogin.value;
 
