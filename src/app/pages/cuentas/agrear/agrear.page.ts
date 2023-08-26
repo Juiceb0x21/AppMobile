@@ -25,7 +25,7 @@ export class AgrearPage implements OnInit {
       message: mensaje,
       duration: 2000,
       position:'bottom'
-    });
+    }); 
     toast.present();
   }
 

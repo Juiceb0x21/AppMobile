@@ -12,7 +12,7 @@ import { AlertController, ToastController } from '@ionic/angular';
 export class CuentasPage implements OnInit {
 
   listaCuentas: Cuenta[] = [];
-  Cuenta!: Cuenta;
+  cuenta!: Cuenta;
 
   constructor(
     private router:Router,
@@ -25,22 +25,25 @@ export class CuentasPage implements OnInit {
 
   ngOnInit() {
     this.listaCuentas = this.cuentasServices.getAll();
-
+    console.log(this.listaCuentas);
     this.activatedRoute.paramMap.subscribe(param => {
       const aux = param.get('id')
       if (aux){
-        this.Cuenta = this.cuentasServices.getCuenta(aux);
-        console.log(this.Cuenta)
+        this.cuenta = this.cuentasServices.getCuenta(aux);
+        console.log(this.cuenta)
       }
     })
   }
 
   ionViewWillEnter(){
-    //this.listaJugadores = this.jugadoresservices.getAll();
+    this.listar();
+    
   }
 
   listar(){
     this.listaCuentas = this.cuentasServices.getAll();
+    console.log(this.listaCuentas);
+    console.log(this.cuenta);
   }
 
   addCuenta(){

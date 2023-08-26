@@ -14,9 +14,15 @@
 <div>
   <ion-card class="card">
     <ion-list>
+<<<<<<< HEAD
       <ion-item *ngFor="let aux of listaCuentas" [routerLink]="['/home/', aux.id]">
         {{ aux.correo }}
         <ion-icon name="trash" (click)="deleteCuenta(aux.id)"></ion-icon>
+=======
+      <ion-item *ngFor="let aux of listaCuentas" [routerLink]="['/home_clone/', aux.id]">
+        {{ aux.correo }}
+        <ion-icon name="trash" (click)='deleteCuenta(aux.id)'></ion-icon>
+>>>>>>> a2fcc32c3d23196338da606e3921da4fc7921ee5
       </ion-item>
     </ion-list>
   </ion-card>
