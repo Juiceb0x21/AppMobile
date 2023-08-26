@@ -74,7 +74,7 @@ export class CuentasPage implements OnInit {
     toast.present()
   }
 
-  async deleteCuenta(){
+  async deleteCuenta(id: any){
     const alert = await this.alertController.create({
       header:'Eliminar cuenta',
       message: '¿estas seguro que deseas eliminar la cuenta?',
@@ -82,8 +82,8 @@ export class CuentasPage implements OnInit {
         {
           text: 'Si',
           handler: () => {
-            if(this.Cuenta && this.Cuenta.id !== undefined){
-              this.cuentasServices.deleteCuenta(this.Cuenta.id)
+            if(id !== undefined){
+              this.cuentasServices.deleteCuenta(id)
               this.mensajeToast('Cuenta eliminada correctamente');
               this.router.navigate(['/cuentas'])
             } else {
@@ -103,5 +103,4 @@ export class CuentasPage implements OnInit {
     let resutado = await alert.onDidDismiss();
   }
 }
-
 

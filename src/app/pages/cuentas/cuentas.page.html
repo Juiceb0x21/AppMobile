@@ -8,24 +8,19 @@
 </ion-header>
 
 <ion-content>
-
   <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-
-
-  <ion-card>
-    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
-      <ion-refresher-content></ion-refresher-content>
-    </ion-refresher>
-
+<div>
+  <ion-card class="card">
     <ion-list>
-      <ion-item *ngFor="let aux of listaCuentas" [routerLink]="['/detalle/', aux.id]">
+      <ion-item *ngFor="let aux of listaCuentas" [routerLink]="['/home/', aux.id]">
         {{ aux.correo }}
-        <ion-icon name="trash" (click)="deleteCuenta()"></ion-icon>
+        <ion-icon name="trash" (click)="deleteCuenta(aux.id)"></ion-icon>
       </ion-item>
     </ion-list>
   </ion-card>
+</div>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>

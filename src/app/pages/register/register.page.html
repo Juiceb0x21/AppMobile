@@ -2,37 +2,43 @@
 <ion-content>
   <div class="container">
     <ion-card class="card">
-        <ion-card-header class="centr">
-          <ion-card-title>Bienvenido!</ion-card-title>
-        </ion-card-header>
+
+      <ion-card-header>
+        <ion-card-title>Registro</ion-card-title>
+      </ion-card-header>
+
       <ion-card-content>
-        <ion-list>
+        <form [formGroup]="formularioRegistro">
           <ion-item>
-            <ion-input labelPlacement="floating" value="">
-              <div slot="label">Nombre de usuario</div>
-            </ion-input>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input formControlName="nombre"></ion-input>
           </ion-item>
-        </ion-list>
-
-        <ion-list>
           <ion-item>
-            <ion-input labelPlacement="floating" value="Email" errorText="Correo invalido" ngModel email>
-              <div slot="label">Email <ion-text color="danger">(Requerido)</ion-text></div>
-            </ion-input>
+            <ion-label position="floating">Correo</ion-label>
+            <ion-input formControlName="correo"></ion-input>
           </ion-item>
-        </ion-list>
-
-        <ion-list>
           <ion-item>
-            <ion-input labelPlacement="floating" value="">
-              <div slot="label">Contraseña</div>
-            </ion-input>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password"></ion-input>
           </ion-item>
-        </ion-list>
-        <ion-button class="button" color="warning" (click)=register() shape="round">Registrarse</ion-button>
-        <h6>¿ya tienes cuenta?</h6>
-        <ion-button class="button" (click)="login()" color="dark" shape="round">Iniciar sesion</ion-button>
+          <ion-item>
+            <ion-label position="floating">Confirmar contraseña</ion-label>
+            <ion-input formControlName="confirmacionPassword"></ion-input>
+          </ion-item>
+        </form>
+        <ion-button class="button" color="warning" (click)=register() shape="round">Registrate</ion-button>
+        <H6>¿Ya tienes cuenta?</H6>
+        <ion-icon name="arrow-down-outline"></ion-icon>
+        <br>
       </ion-card-content>
-    </ion-card>
+
+    </ion-card> 
   </div>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar slot="start">
+    <ion-button class="button" [routerLink]="['/login']" color="dark" shape="round">Regrsa al login</ion-button>
+  </ion-toolbar>
+</ion-footer>

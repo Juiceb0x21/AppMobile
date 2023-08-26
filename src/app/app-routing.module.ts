@@ -58,7 +58,11 @@ const routes: Routes = [
   {
     path: 'agrear',
     loadChildren: () => import('./pages/cuentas/agrear/agrear.module').then( m => m.AgrearPageModule)
+  },  {
+    path: 'recuperacion',
+    loadChildren: () => import('./pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
   }
+
 
 
 

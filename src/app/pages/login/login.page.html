@@ -1,34 +1,41 @@
 
-
 <ion-content>
   <div class="container">
     <ion-card class="card">
-      <ion-card-header class="centr">
-        <ion-card-title>Ingreso</ion-card-title>
-      </ion-card-header>
-      <ion-card-content class="cent">
-        <ion-list>
-          <ion-item>
-            <ion-input labelPlacement="floating" value="Email" 
-                errorText="Correo invalido"
-                ngModel
-                email>
-              <div slot="label">Email<ion-text color="danger"> (Requerido)</ion-text> </div>
-            </ion-input>
-          </ion-item>
-        </ion-list>
-        <br>
-        <ion-list>
-          <ion-item>
-            <ion-input labelPlacement="floating" value="">
-              <div slot="label">Contraseña</div>
-            </ion-input>
-          </ion-item>
-        </ion-list>
-        <ion-button class="button" (click)="login()" color="warning" shape="round">Iniciar sesion</ion-button>
 
-        <ion-button class="button" (click)="register()" color="dark" shape="round">Registrarse</ion-button>
+      <ion-card-header>
+        <ion-card-title>Ingresa</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="formularioLogin">
+          <ion-item>
+            <ion-label position="floating">Correo</ion-label>
+            <ion-input formControlName="correo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password"></ion-input>
+          </ion-item>
+        </form>
+
+        <ion-button class="button" color="warning" (click)=login() shape="round">Iniciar sesion</ion-button>
+        <a class="centrado" [routerLink]="['/recuperacion']" style="color: goldenrod">¿Olivdaste tu contraseña?</a>
+        <br>
+        <H6>si no tienes cuenta, registrate</H6>
+        <ion-icon name="arrow-down-outline"></ion-icon>
+        <br>
       </ion-card-content>
-    </ion-card>
+      
+
+    </ion-card> 
+    
   </div>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar slot="end">
+    <ion-button class="button" [routerLink]="['/register']" color="dark" shape="round">Registrarse</ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,25 @@
+div{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-content {
+    // ocultar scroll lateral
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  ion-card{
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    overflow-x: hidden;
+}
