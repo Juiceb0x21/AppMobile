@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +12,7 @@ export class RegisterPage implements OnInit {
 
   formularioRegistro: FormGroup;
 
-  constructor(private router: Router, public fb: FormBuilder, public alertController: AlertController) 
+  constructor(private router: Router, public fb: FormBuilder, public alertController: AlertController, private toastController: ToastController) 
   { 
     this.formularioRegistro = this.fb.group({
       'nombre': new FormControl("", Validators.required),
@@ -29,6 +29,14 @@ export class RegisterPage implements OnInit {
     this.router.navigate(['login'])
   }
 
+  async mensajeToast(mensaje:string) {
+    const toast = await this.toastController.create({
+      message: mensaje,
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present()
+  }
 
 
   async register(){
@@ -39,10 +47,11 @@ export class RegisterPage implements OnInit {
         header: 'Registro no valido',
         message: 'Campos sin datos.',
         buttons: ['Aceptar']
-      });
-
+      } );
       await alert.present();
       return;
+    } else {
+      this.mensajeToast('Se registro correctamente, ahora debe iniciar sesion');
     }
 
     var usuario = {

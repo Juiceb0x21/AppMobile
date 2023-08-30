@@ -11,27 +11,8 @@
 <ion-content class="hide">
   <div class="img">
     <img src="assets/img/qr.jpg"/>
-      <ion-card-header class="centr">
-        <ion-card-title>Alex</ion-card-title>
-        <ion-card-subtitle>al.pavezf@duocuc.cl</ion-card-subtitle>
-      </ion-card-header>
-        <div class="centr">
-          <ion-accordion-group expand="inset">
-            <ion-accordion value="first">
-              <ion-item slot="header" color="rose">
-                <ion-label>Sede Registro</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">DuocUC Puente Alto</div>
-            </ion-accordion>
-            <ion-accordion value="second">
-              <ion-item slot="header" color="rose">
-                <ion-label>Fecha/Hora Registro</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">12/02/2023 | 09:43 </div>
-            </ion-accordion>
-          </ion-accordion-group>
-      </div>
-      <ion-button class="margin" [routerLink]="['/detalle']" shape="round" color="warning">Detalle</ion-button> 
+      <app-home-comp nombre="Alex Pavez" correo="al.pavezf@duocuc.cl"></app-home-comp>
+    <ion-button class="margin" [routerLink]="['/detalle']" shape="round" color="warning">Detalle</ion-button> 
   </div>
 </ion-content>
 
