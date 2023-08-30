@@ -1,0 +1,15 @@
+.perfil-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .perfil-imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .perfil-info p {
+    margin: 5px 0;
+  }

@@ -3,25 +3,67 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
     </ion-buttons>
-    <ion-title>asistencia</ion-title>
+    <ion-title>Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div>
-    
-  </div>
+  <ion-card>
+    <ion-card-content class="content-card">
+      <ion-accordion-group expand="inset">
+
+        <ion-accordion value="ARQUITECTURA">
+          <ion-item slot="header" color="warning">
+            <ion-label class="header-label">ARQUITECTURA</ion-label>
+          </ion-item>
+          <ion-label slot="content" class="content-label">
+            30-08-2023: AUSENTE <br>
+            31-08-2023: PRESENTE <br>
+            01-09-2023: AUSENTE <br>
+            02-09-2023: PRESENTE <br>
+            03-09-2023: PRESENTE
+          </ion-label>
+        </ion-accordion>
+
+        <ion-accordion value="PROGRAMACION DE APLICACIONES MOVILES">
+          <ion-item slot="header" color="warning">
+            <ion-label class="header-label">PROGRAMACION DE APLICACIONES MOVILES</ion-label>
+          </ion-item>
+          <ion-label slot="content" class="content-label">
+            29-08-2023: AUSENTE <br>
+            01-09-2023: AUSENTE <br>
+            03-09-2023: PRESENTE <br>
+            05-09-2023: AUSENTE
+          </ion-label>
+        </ion-accordion>
+
+        <ion-accordion value="CALIDAD DE SOFTWARE">
+          <ion-item slot="header" color="warning">
+            <ion-label class="header-label">CALIDAD DE SOFTWARE</ion-label>
+          </ion-item>
+          <ion-label slot="content" class="content-label">
+            31-08-2023: AUSENTE <br>
+            02-09-2023: AUSENTE <br>
+            04-09-2023: PRESENTE <br>
+            06-09-2023: AUSENTE
+          </ion-label>
+        </ion-accordion>
+
+        <ion-accordion value="PROCESO DE PORTAFOLIO">
+          <ion-item slot="header" color="warning">
+            <ion-label class="header-label">PROCESO DE PORTAFOLIO</ion-label>
+          </ion-item>
+          <ion-label slot="content" class="content-label">
+            29-08-2023: PRESENTE <br>
+            26-09-2023: AUSENTE
+          </ion-label>
+        </ion-accordion>
+
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
-<ion-modal [keepContentsMounted]="true">
-  <ng-template>
-    <ion-datetime id="datetime"></ion-datetime>
-  </ng-template>
-</ion-modal>
 
-<ion-footer>
-  <ion-toolbar slot="end">
-    <ion-datetime-button datetime="datetime"></ion-datetime-button>
-  </ion-toolbar>
-</ion-footer>
+
 
