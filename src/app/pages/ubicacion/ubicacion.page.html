@@ -1,16 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
     </ion-buttons>
-    <ion-title>ubicacion</ion-title>
+    <ion-title>Ubicacion</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ubicacion</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+
+<ion-content class="background">
+  <div class="container">
+    <ion-card class="card">
+      <ion-card-content>
+        <ion-list [inset]="true">
+          <ion-item>
+            <ion-label class="centr">Puente Alto | DuocUC</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
+
