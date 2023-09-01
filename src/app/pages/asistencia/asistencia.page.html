@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
@@ -8,12 +8,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-content class="content-card">
+  <div>
+    <ion-card>
+    <ion-card-content>
       <ion-accordion-group expand="inset">
 
         <ion-accordion value="ARQUITECTURA">
-          <ion-item slot="header" color="warning">
+          <ion-item slot="header" color="black">
             <ion-label class="header-label">ARQUITECTURA</ion-label>
           </ion-item>
           <ion-label slot="content" class="content-label">
@@ -26,7 +27,7 @@
         </ion-accordion>
 
         <ion-accordion value="PROGRAMACION DE APLICACIONES MOVILES">
-          <ion-item slot="header" color="warning">
+          <ion-item slot="header" color="black">
             <ion-label class="header-label">PROGRAMACION DE APLICACIONES MOVILES</ion-label>
           </ion-item>
           <ion-label slot="content" class="content-label">
@@ -38,7 +39,7 @@
         </ion-accordion>
 
         <ion-accordion value="CALIDAD DE SOFTWARE">
-          <ion-item slot="header" color="warning">
+          <ion-item slot="header" color="black">
             <ion-label class="header-label">CALIDAD DE SOFTWARE</ion-label>
           </ion-item>
           <ion-label slot="content" class="content-label">
@@ -50,7 +51,7 @@
         </ion-accordion>
 
         <ion-accordion value="PROCESO DE PORTAFOLIO">
-          <ion-item slot="header" color="warning">
+          <ion-item slot="header" color="black">
             <ion-label class="header-label">PROCESO DE PORTAFOLIO</ion-label>
           </ion-item>
           <ion-label slot="content" class="content-label">
@@ -62,6 +63,7 @@
       </ion-accordion-group>
     </ion-card-content>
   </ion-card>
+  </div>
 </ion-content>
 
 
