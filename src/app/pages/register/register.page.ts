@@ -18,7 +18,7 @@ export class RegisterPage implements OnInit {
       'nombre': new FormControl("", Validators.required),
       'correo': new FormControl("", Validators.required),
       'password': new FormControl("", Validators.required),
-      'confirmacionPassword': new FormControl("", Validators.required)
+      'rut': new FormControl("", Validators.required),
     });
   }
 
@@ -57,7 +57,8 @@ export class RegisterPage implements OnInit {
     var usuario = {
       nombre: f.nombre,
       correo: f.correo,
-      password: f.password
+      password: f.password,
+      rut: f.rut
     }
 
     localStorage.setItem('usuario', JSON.stringify(usuario));

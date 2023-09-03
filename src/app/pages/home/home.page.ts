@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+
 import { Router } from '@angular/router';
+import { Component, ViewChild, OnInit  } from '@angular/core';
+import { IonModal } from '@ionic/angular';
+import { OverlayEventDetail } from '@ionic/core/components';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +12,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+ 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public fb: FormBuilder, public alertController: AlertController, private toastController: ToastController) {
+    
+   }
 
   ngOnInit() {
   }
@@ -20,5 +28,11 @@ export class HomePage implements OnInit {
   login() {
     this.router.navigate(['login'])
   }
+  
+
+
+  
+
+  
 
 }
