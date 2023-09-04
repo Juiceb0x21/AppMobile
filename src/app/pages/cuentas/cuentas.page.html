@@ -12,7 +12,7 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 <div>
-  <ion-card class="card">
+  <ion-card>
     <ion-list>
       <ion-item *ngFor="let aux of listaCuentas" [routerLink]="['/home/', aux.id]">
         {{ aux.correo }}

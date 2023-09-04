@@ -1,0 +1,47 @@
+.perfil-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .perfil-imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .perfil-info p {
+    margin: 5px 0;
+  }
+
+  ion-content {
+    // ocultar scroll lateral
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  ion-card{
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+ion-card-subtitle{
+    text-align: justify;
+}
+
+.boton{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15%
+}

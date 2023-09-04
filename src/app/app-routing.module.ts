@@ -63,6 +63,39 @@ const routes: Routes = [
     path: 'recuperacion',
     loadChildren: () => import('./pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
   },
+  {
+    path: 'homedocente',
+    loadChildren: () => import('./pages/homedocente/homedocente.module').then( m => m.HomedocentePageModule)
+  },  {
+    path: 'registerdocente',
+    loadChildren: () => import('./pages/registerdocente/registerdocente.module').then( m => m.RegisterdocentePageModule)
+  },
+  {
+    path: 'logindocente',
+    loadChildren: () => import('./pages/logindocente/logindocente.module').then( m => m.LogindocentePageModule)
+  },
+  {
+    path: 'seccionesdocente',
+    loadChildren: () => import('./pages/seccionesdocente/seccionesdocente.module').then( m => m.SeccionesdocentePageModule)
+  },
+  {
+    path: 'notasdocente',
+    loadChildren: () => import('./pages/notasdocente/notasdocente.module').then( m => m.NotasdocentePageModule)
+  },
+  {
+    path: 'qrdocente',
+    loadChildren: () => import('./pages/qrdocente/qrdocente.module').then( m => m.QrdocentePageModule)
+  },
+  {
+    path: 'justificativosdocente',
+    loadChildren: () => import('./pages/justificativosdocente/justificativosdocente.module').then( m => m.JustificativosdocentePageModule)
+  },
+  {
+    path: 'cargandoqr',
+    loadChildren: () => import('./pages/cargandoqr/cargandoqr.module').then( m => m.CargandoqrPageModule)
+  },
+
+
 ];
 
 @NgModule({

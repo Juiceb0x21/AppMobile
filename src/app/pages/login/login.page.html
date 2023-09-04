@@ -2,7 +2,6 @@
 <ion-content>
   <div class="container">
     <ion-card class="card">
-
       <ion-card-header>
         <ion-card-title>Ingresa</ion-card-title>
       </ion-card-header>
@@ -36,6 +35,8 @@
 
 <ion-footer>
   <ion-toolbar slot="end">
+    <ion-button fill="outline" shape="round" class="boton" color="warning" [routerLink]="['/logindocente']">Docente</ion-button>
+
     <ion-button class="button" [routerLink]="['/register']" color="dark" shape="round">Registrarse</ion-button>
   </ion-toolbar>
 </ion-footer>

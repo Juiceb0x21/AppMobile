@@ -1,18 +1,14 @@
 
-<ion-content>
+<ion-content class="">
   <div class="container">
     <ion-card class="card">
 
       <ion-card-header>
-        <ion-card-title>Registro</ion-card-title>
+        <ion-card-title>Registro docente</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
-        <form [formGroup]="formularioRegistro">
-          <ion-item>
-            <ion-label position="floating">Nombre</ion-label>
-            <ion-input formControlName="nombre"></ion-input>
-          </ion-item>
+        <form [formGroup]="formularioRegistroDocente">
           <ion-item>
             <ion-label position="floating">Correo</ion-label>
             <ion-input formControlName="correo"></ion-input>
@@ -22,16 +18,19 @@
             <ion-input formControlName="password"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Ingresar rut</ion-label>
+            <ion-label position="floating">Rut</ion-label>
             <ion-input formControlName="rut"></ion-input>
           </ion-item>
+          <ion-item>
+            <ion-label position="floating">Sede donde se encuentra</ion-label>
+            <ion-input formControlName="sede"></ion-input>
+          </ion-item>
         </form>
-        <ion-button class="button" color="warning" (click)=register() shape="round">Registrate</ion-button>
+        <ion-button class="button" color="warning"shape="round" (click)=registerDocente()>Registrate</ion-button>
         <H6>¿Ya tienes cuenta?</H6>
         <ion-icon name="arrow-down-outline"></ion-icon>
         <br>
       </ion-card-content>
-
     </ion-card> 
   </div>
 
@@ -39,6 +38,7 @@
 
 <ion-footer>
   <ion-toolbar slot="start">
-    <ion-button class="button" [routerLink]="['/login']" color="dark" shape="round">Regresa al login</ion-button>
+    <ion-button class="button" color="dark" shape="round" [routerLink]="['/logindocente']">Regrsa al login</ion-button>
   </ion-toolbar>
 </ion-footer>
+

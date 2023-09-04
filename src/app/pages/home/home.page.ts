@@ -12,14 +12,16 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
- 
+  isModalOpen = false;
 
+ 
   constructor(private router: Router, public fb: FormBuilder, public alertController: AlertController, private toastController: ToastController) {
-    
+
    }
 
   ngOnInit() {
   }
+
 
   perfil() {
     this.router.navigate(['perfil'])
@@ -28,6 +30,8 @@ export class HomePage implements OnInit {
   login() {
     this.router.navigate(['login'])
   }
+
+  
   
 
 

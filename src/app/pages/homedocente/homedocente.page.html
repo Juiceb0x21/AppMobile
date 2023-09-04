@@ -1,0 +1,76 @@
+
+<ion-content>
+<div>
+  <br>
+  <br>
+  <ion-card class="card">
+    <ion-card-content>
+      <div class="perfil-container">
+        <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Foto de perfil" class="perfil-imagen">
+        <ion-label class="perfil-info">
+          <p>Correo: {{ docente.correo }}</p>
+          <p>Rut: {{ docente.rut }}</p>
+          <p>Sede: {{ docente.sede }}</p>
+        </ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="centr">Alumnos</ion-card-title>
+      <ion-card-subtitle class="centr">Alumnos registrados el dia de hoy</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="qr" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" />
+          </ion-thumbnail>
+          <ion-label>Alex Pavez Fredes</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="qr" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" />
+          </ion-thumbnail>
+          <ion-label>Alan Moreno Flores</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="qr" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" />
+          </ion-thumbnail>
+          <ion-label>Alex Oliva Jerez</ion-label>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="qr" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" />
+          </ion-thumbnail>
+          <ion-label>Bryan Pinto Meza</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+    <ion-button ion-button class="button" shape="round" color="warning" [routerLink]="['/seccionesdocente']">Secciones</ion-button>
+      <ion-button class="button" shape="round" color="warning" fill="outline" [routerLink]="['/notasdocente']">Notas</ion-button>
+      <ion-button class="button" shape="round" color="warning" fill="outline" [routerLink]="['/justificativosdocente']">Justificativos</ion-button>
+      <ion-button class="button" shape="round" color="dark" [routerLink]="['/cargandoqr']">QR</ion-button>
+</div>
+</ion-content>
+
+<ion-fab class="padd" slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button>
+    <ion-icon name="chevron-up-circle" color="dark"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button>
+      <ion-icon (click)="login()" name="close-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon  name="settings"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
