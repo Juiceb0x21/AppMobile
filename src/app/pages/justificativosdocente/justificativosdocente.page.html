@@ -3,14 +3,46 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/homedocente" color="dark"></ion-back-button>
     </ion-buttons>
-    <ion-title>justificativosdocente</ion-title>
+    <ion-title>Justificativos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">justificativosdocente</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <!-- ... Otro contenido de la página ... -->
+
+  <!-- Sección de mensajes de los alumnos -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mensajes de Alumnos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Lista de mensajes -->
+      <ion-list>
+        <!-- Mensaje de un alumno -->
+        <ion-item>
+          <ion-label>De: Alex Oliva</ion-label>
+          <ion-note slot="end">30-08-2023</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-textarea>Profesor, no pude asistir a la clase de hoy debido a una emergencia médica.
+            <ion-button color="secondary">Justificar</ion-button>
+            <ion-button color="danger">Dejar ausente</ion-button>
+          </ion-textarea>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>De: Muriel Miranda</ion-label>
+          <ion-note slot="end">31-08-2023</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-textarea>Estimado profesor, me encuentro enfermo y no pude asistir a la clase. Por favor, ¿puede justificar mi falta?
+            <ion-button color="secondary">Justificar</ion-button>
+            <ion-button color="danger">Dejar ausente</ion-button>
+          </ion-textarea>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>

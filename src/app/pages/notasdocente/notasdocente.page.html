@@ -3,14 +3,146 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/homedocente" color="dark"></ion-back-button>
     </ion-buttons>
-    <ion-title>notasdocente</ion-title>
+    <ion-title>Notas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">notasdocente</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div>
+    <ion-card>
+      <ion-card-content>
+        <ion-accordion-group expand="inset">
+
+          <!-- ARQUITECTURA -->
+          <ion-accordion value="ARQUITECTURA">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">ARQUITECTURA</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 4.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 4.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+          <!-- PROGRAMACIÓN DE APLICACIONES MOVILES -->
+          <ion-accordion value="PROGRAMACION DE APLICACIONES MOVILES">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">PROGRAMACIÓN DE APLICACIONES MÓVILES</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 5.2</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+          <!-- CALIDAD DE SOFTWARE -->
+          <ion-accordion value="CALIDAD DE SOFTWARE">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">CALIDAD DE SOFTWARE</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 7.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 7.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+          <!-- PROGRAMACIÓN WEB -->
+          <ion-accordion value="PROGRAMACION WEB">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">PROGRAMACIÓN WEB</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 6.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 6.2</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+          <!-- PROGRAMACIÓN DE BASE DE DATOS -->
+          <ion-accordion value="PROGRAMACION DE BASE DE DATOS">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">PROGRAMACIÓN DE BASE DE DATOS</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 7.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 6.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+          <!-- PROGRAMACIÓN DE ALGORITMOS -->
+          <ion-accordion value="PROGRAMACION DE ALGORITMOS">
+            <ion-item slot="header" color="black">
+              <ion-label class="header-label">PROGRAMACIÓN DE ALGORITMOS</ion-label>
+            </ion-item>
+            <ion-label slot="content" class="content-label">
+              Prueba 1:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.5</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 1.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 4.3</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 7.0</span> <br>
+            </ion-label>
+            <ion-label slot="content" class="content-label">
+              Prueba 2:<br>
+              <span class="nombre-estudiante">Alex Oliva:</span> <span class="nota">Nota: 6.8</span> <br>
+              <span class="nombre-estudiante">Muriel Miranda:</span> <span class="nota">Nota: 3.0</span> <br>
+              <span class="nombre-estudiante">Alan Moreno:</span> <span class="nota">Nota: 5.0</span> <br>
+              <span class="nombre-estudiante">Bryan Pinto:</span> <span class="nota">Nota: 6.9</span> <br>
+            </ion-label>
+          </ion-accordion>
+
+        </ion-accordion-group>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
+
+

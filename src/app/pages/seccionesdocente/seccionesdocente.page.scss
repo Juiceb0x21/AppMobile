@@ -1,0 +1,39 @@
+/* Estilo para los nombres de los estudiantes */
+.nombre-estudiante {
+    font-weight: bold;
+  }
+  
+  /* Estilo para los estudiantes ausentes */
+  .estado-ausente {
+    color: red;
+  }
+
+
+
+  ion-datetime-button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-label {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+.content-label {
+    font-size: 14px;
+  }
+
+  div{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+ion-card{
+  box-shadow: 12px ;
+}
+  
