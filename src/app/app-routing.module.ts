@@ -66,7 +66,8 @@ const routes: Routes = [
   {
     path: 'homedocente',
     loadChildren: () => import('./pages/homedocente/homedocente.module').then( m => m.HomedocentePageModule)
-  },  {
+  },
+  {
     path: 'registerdocente',
     loadChildren: () => import('./pages/registerdocente/registerdocente.module').then( m => m.RegisterdocentePageModule)
   },
@@ -93,7 +94,12 @@ const routes: Routes = [
   {
     path: 'cargandoqr',
     loadChildren: () => import('./pages/cargandoqr/cargandoqr.module').then( m => m.CargandoqrPageModule)
+  },  {
+    path: 'iniciarclas',
+    loadChildren: () => import('./pages/iniciarclas/iniciarclas.module').then( m => m.IniciarclasPageModule)
   },
+
+  
 
 
 ];
