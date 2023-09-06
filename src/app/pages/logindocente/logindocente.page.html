@@ -2,10 +2,7 @@
 <ion-content>
     <div class="container">
       <ion-card class="card">
-        <ion-card-header>
-          <ion-card-title>Ingreso docente</ion-card-title>
-        </ion-card-header>
-  
+      
         <ion-card-content>
           <form [formGroup]="formularioLoginDocente">
             <ion-item>
@@ -35,7 +32,7 @@
   </ion-content>
   
   <ion-footer>
-    <ion-toolbar>
+    <ion-toolbar slot="end" >
       <ion-button class="button" color="dark" shape="round" [routerLink]="['/registerdocente']">Registrarse</ion-button>
     </ion-toolbar>
   </ion-footer>

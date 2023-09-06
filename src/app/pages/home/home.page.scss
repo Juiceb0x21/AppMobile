@@ -18,10 +18,3 @@ ion-content {
     }
   }
 
-  ion-content{
-    @media (prefers-color-scheme: light){
-        background-color: white;
-        color: black;
-  }
-}
-

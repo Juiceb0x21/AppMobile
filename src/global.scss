@@ -78,7 +78,7 @@ ion-input{
     text-align: center;
     justify-content: center;
     margin: auto;
-    width: 300px;
+    width: 16em;
     padding: 30px;
 }
 
@@ -90,3 +90,9 @@ ion-input{
     width: 60px;
 }
 
+ion-content{
+    @media (prefers-color-scheme: light){
+        background-color: white;
+        color: black;
+  }
+}
