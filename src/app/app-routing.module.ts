@@ -98,6 +98,10 @@ const routes: Routes = [
     path: 'iniciarclas',
     loadChildren: () => import('./pages/iniciarclas/iniciarclas.module').then( m => m.IniciarclasPageModule)
   },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
+  },
 
   
 
