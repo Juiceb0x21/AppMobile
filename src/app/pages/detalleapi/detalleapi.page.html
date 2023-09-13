@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detalleapi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ personaje?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img [src]="personaje?.image" [alt]="personaje?.name">
+    <ion-card-header>
+      <ion-card-title>{{ personaje?.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Status: {{ personaje?.status }} <br>
+      Species: {{ personaje?.species }} <br>
+      Gender: {{ personaje?.gender }} <br>
+      ID: {{ personaje?.id }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

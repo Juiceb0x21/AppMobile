@@ -7,21 +7,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-card-content>
-      <div class="perfil-container">
-        <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Foto de perfil" class="perfil-imagen">
-        <ion-label class="perfil-info">
-          <p>Nombre: Alex Pavez</p>
-          <p>ID del Alumno: 123123</p>
-          <p>Carrera: Ingeniería Informática</p>
-          <p>ID de Carrera: 789012</p>
-        </ion-label>
-      </div>
-    </ion-card-content>
-  </ion-card>
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let i of personajes">
+      <ion-card [routerLink]="'/detalleapi/' + i.id">
+        <img src="{{i.image}}" alt="">
+        <ion-card-header>
+          <ion-card-title>{{ i.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="cargarMasDatos()">Cargar más información</ion-button>
+  <ion-button (click)="cargarAnteriorPagina()" id="btnAnterior">Anterior</ion-button>
+  <ion-button (click)="cargarSiguientePagina()">Siguiente</ion-button>
 </ion-content>
-
-
 
