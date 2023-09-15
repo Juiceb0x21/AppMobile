@@ -4,6 +4,7 @@ ion-card{
     border-radius: 15px;
     justify-content: center;
     overflow-x: hidden;
+    margin-top: 1em;
 }
 
 ion-card-subtitle{
@@ -20,3 +21,17 @@ ion-card-subtitle{
     margin: 15%
 }
 
+.container{
+
+    margin-top: 1em;
+}
+
+ion-content {
+    // ocultar scroll lateral
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }

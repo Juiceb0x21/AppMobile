@@ -21,8 +21,10 @@
       </ion-card>
     </ion-item>
   </ion-list>
-  <ion-button (click)="cargarMasDatos()">Cargar más información</ion-button>
-  <ion-button (click)="cargarAnteriorPagina()" id="btnAnterior">Anterior</ion-button>
-  <ion-button (click)="cargarSiguientePagina()">Siguiente</ion-button>
+  <div class="bu">
+  <ion-button (click)="cargarMasDatos()" color="warning"> Cargar mas</ion-button>
+  <ion-button (click)="cargarAnteriorPagina()" id="btnAnterior" color="warning">Anterior</ion-button>
+  <ion-button (click)="cargarSiguientePagina()" color="warning">Siguiente</ion-button>
+  </div>
 </ion-content>
 
