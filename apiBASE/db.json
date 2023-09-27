@@ -1,0 +1,38 @@
+{
+    "alumnos":[
+        {
+            "rut": "1234567-k",
+            "nombre": "carlo",
+            "apellido": "perez",
+            "correo": "tonto@gmial.com",
+            "numerotele": "95845984",
+            "carrera": "ing. en informatica"
+        }
+    ],
+
+    "profesor":[
+        {
+            "rut":"1123456-k",
+            "nombre": "manuel",
+            "apellido": "gon",
+            "correo": "profe@gmail.com",
+            "numero": "598451",
+            "area":"informatica"
+        }
+    ],
+    "asistencias":[
+        {
+            
+        }
+    ],
+    "clase":[
+        {
+            "id":"1",
+            "seccion":"DC007",
+            "profesor":"Juju",
+            "fecha":"22/09/2023"
+            
+        }
+    ]
+
+}
