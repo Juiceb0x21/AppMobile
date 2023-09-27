@@ -22,7 +22,9 @@
     ],
     "asistencias":[
         {
-            
+            "clase":"progracion web",
+            "fecha":"22/09/2023",
+            "profesor":"freddy"
         }
     ],
     "clase":[

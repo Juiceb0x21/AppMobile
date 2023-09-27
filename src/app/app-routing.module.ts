@@ -106,7 +106,19 @@ const routes: Routes = [
   {
     path: 'detalleapi/:id',
     loadChildren: () => import('./pages/detalleapi/detalleapi.module').then( m => m.DetalleapiPageModule)
+  },  {
+    path: 'alumnos',
+    loadChildren: () => import('./alumnos/alumnos.module').then( m => m.AlumnosPageModule)
   },
+  {
+    path: 'detalle',
+    loadChildren: () => import('./api/detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+  {
+    path: 'detalle',
+    loadChildren: () => import('./app/api/detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+
 
   
 
