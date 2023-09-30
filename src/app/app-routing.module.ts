@@ -135,6 +135,11 @@ const routes: Routes = [
     path: 'detalle/:id',
     loadChildren: () => import('./pages/apiCRUD/detalle/detalle.module').then( m => m.DetallePageModule)
   },
+  {
+    path: 'eliminar/:id',
+    loadChildren: () => import('./pages/apiCRUD/eliminar/eliminar.module').then( m => m.EliminarPageModule)
+  },
+
 
 
 

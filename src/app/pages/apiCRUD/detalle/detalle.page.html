@@ -20,6 +20,6 @@
     </ion-card-content>
 
     <ion-button [routerLink]="['/update',alumno.id]" color="warning"><ion-icon name="create"></ion-icon></ion-button>
-    <ion-button color="danger"><ion-icon name="trash"></ion-icon></ion-button>
+    <ion-button [routerLink]="['/eliminar',alumno.id]" color="danger"><ion-icon name="trash"></ion-icon></ion-button>
   </ion-card>
 </ion-content>

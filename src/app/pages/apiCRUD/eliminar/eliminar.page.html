@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Eliminar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{ alumno.id }}</ion-card-subtitle>
+      <ion-card-title>Ralmente desea eliminar a {{ alumno.nombre }} {{ alumno.apellido }}?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="eliminarAlumno()"  expand="block" color="danger">Eliminar</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

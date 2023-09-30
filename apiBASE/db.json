@@ -3,20 +3,20 @@
     {
       "id": "1",
       "rut": "1234567-k",
-      "nombre": "carlo",
+      "nombre": "carloss",
       "apellido": "perez",
       "correo": "tonto@gmial.com",
       "numerotele": "95845984",
-      "carrera": "ing. en informatica"
+      "carrera": "ing. en informaticap"
     },
     {
+      "id": "xlZdZNN",
       "rut": "123123123-k",
       "nombre": "Julio",
       "apellido": "pro",
       "correo": "juliopro@gmail.com",
-      "numerotele": 123123123,
-      "carrera": "sexooo",
-      "id": "xlZdZNN"
+      "numerotele": 1231231238,
+      "carrera": "sexooo"
     },
     {
       "id": "fqK9Jne",
@@ -26,15 +26,6 @@
       "correo": "aweonaopagrande@gmail.com",
       "numerotele": 123123123,
       "carrera": "aweonao ql"
-    },
-    {
-      "rut": "123123123s",
-      "nombre": "dads",
-      "apellido": "asd",
-      "correo": "asd",
-      "numerotele": 123123,
-      "carrera": "asdasd",
-      "id": "4hbjDyM"
     }
   ],
   "profesor": [

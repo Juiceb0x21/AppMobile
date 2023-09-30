@@ -27,6 +27,10 @@ export class AlumnosService {
    actualizarAlumno(alumno:any):Observable<Ialumnos>{
     return this.http.put<Ialumnos>(`${environment.apiURL}/alumnos/${alumno.id}`,alumno)
    }
+
+   eliminarAlumnoById(alumno:any):Observable<Ialumnos>{
+    return this.http.delete<Ialumnos>(`${environment.apiURL}/alumnos/${alumno.id}`)
+   }
 }
 
 
