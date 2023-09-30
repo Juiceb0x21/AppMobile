@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Listar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let i of alumnos; let indexArray = index" [routerLink]="['/detalle',i.id]"> 
+      <ion-label> {{ i.nombre }} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,40 +1,65 @@
 {
-    "alumnos":[
-        {
-            "rut": "1234567-k",
-            "nombre": "carlo",
-            "apellido": "perez",
-            "correo": "tonto@gmial.com",
-            "numerotele": "95845984",
-            "carrera": "ing. en informatica"
-        }
-    ],
-
-    "profesor":[
-        {
-            "rut":"1123456-k",
-            "nombre": "manuel",
-            "apellido": "gon",
-            "correo": "profe@gmail.com",
-            "numero": "598451",
-            "area":"informatica"
-        }
-    ],
-    "asistencias":[
-        {
-            "clase":"progracion web",
-            "fecha":"22/09/2023",
-            "profesor":"freddy"
-        }
-    ],
-    "clase":[
-        {
-            "id":"1",
-            "seccion":"DC007",
-            "profesor":"Juju",
-            "fecha":"22/09/2023"
-            
-        }
-    ]
-
+  "alumnos": [
+    {
+      "id": "1",
+      "rut": "1234567-k",
+      "nombre": "carlo",
+      "apellido": "perez",
+      "correo": "tonto@gmial.com",
+      "numerotele": "95845984",
+      "carrera": "ing. en informatica"
+    },
+    {
+      "rut": "123123123-k",
+      "nombre": "Julio",
+      "apellido": "pro",
+      "correo": "juliopro@gmail.com",
+      "numerotele": 123123123,
+      "carrera": "sexooo",
+      "id": "xlZdZNN"
+    },
+    {
+      "rut": "172631273",
+      "nombre": "Alexo",
+      "apellido": "Paolo",
+      "correo": "aweonaopagrande@gmail.com",
+      "numerotele": 123123123,
+      "carrera": "aweonao ql",
+      "id": "fqK9Jne"
+    },
+    {
+      "rut": "123123123s",
+      "nombre": "dads",
+      "apellido": "asd",
+      "correo": "asd",
+      "numerotele": 123123,
+      "carrera": "asdasd",
+      "id": "4hbjDyM"
+    }
+  ],
+  "profesor": [
+    {
+      "rut": "1123456-k",
+      "nombre": "manuel",
+      "apellido": "gon",
+      "correo": "profe@gmail.com",
+      "numero": "598451",
+      "area": "informatica"
+    }
+  ],
+  "asistencias": [
+    {
+      "clase": "progracion web",
+      "fecha": "22/09/2023",
+      "profesor": "freddy"
+    }
+  ],
+  "clase": [
+    {
+      "id": "1",
+      "seccion": "DC007",
+      "profesor": "Juju",
+      "fecha": "22/09/2023"
+    }
+  ]
 }

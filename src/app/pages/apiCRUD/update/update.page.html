@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Actualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form (ngSubmit)="updateAlumno()">
+    <ion-item lines="full">
+      <ion-label position="floating">Rut</ion-label>
+      <ion-input type="text" name="txtRut" [(ngModel)]="alumno.rut" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="alumno.nombre" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" name="txtApellido" [(ngModel)]="alumno.apellido" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="text" name="txtCorreo" [(ngModel)]="alumno.correo" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Numero de Telefono</ion-label>
+      <ion-input type="number" name="numTelefono" [(ngModel)]="alumno.numerotele" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Carrera</ion-label>
+      <ion-input type="text" name="txtCarrera" [(ngModel)]="alumno.carrera" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-button (click)="updateAlumno()" expand="block" color="success">Actualizar</ion-button>    </ion-item>
+  </form>
+</ion-content>

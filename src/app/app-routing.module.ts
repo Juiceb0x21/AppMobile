@@ -106,18 +106,38 @@ const routes: Routes = [
   {
     path: 'detalleapi/:id',
     loadChildren: () => import('./pages/detalleapi/detalleapi.module').then( m => m.DetalleapiPageModule)
-  },  {
+  },
+  {
     path: 'alumnos',
     loadChildren: () => import('./alumnos/alumnos.module').then( m => m.AlumnosPageModule)
   },
   {
     path: 'detalle',
-    loadChildren: () => import('./api/detalle/detalle.module').then( m => m.DetallePageModule)
-  },
-  {
-    path: 'detalle',
     loadChildren: () => import('./app/api/detalle/detalle.module').then( m => m.DetallePageModule)
   },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./pages/apiCRUD/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import('./pages/apiCRUD/listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'crud',
+    loadChildren: () => import('./pages/apiCRUD/crud/crud.module').then( m => m.CrudPageModule)
+  },
+  {
+    path: 'update/:id',
+    loadChildren: () => import('./pages/apiCRUD/update/update.module').then( m => m.UpdatePageModule)
+  },
+  {
+    path: 'detalle/:id',
+    loadChildren: () => import('./pages/apiCRUD/detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+
+
+
 
 
   
