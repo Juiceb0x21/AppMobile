@@ -25,7 +25,7 @@ export class AlumnosService {
    }
 
    actualizarAlumno(alumno:any):Observable<Ialumnos>{
-    return this.http.put<Ialumnos>(`${environment.apiURL}/alumnos/?id=${alumno.id}`,alumno)
+    return this.http.put<Ialumnos>(`${environment.apiURL}/alumnos/${alumno.id}`,alumno)
    }
 }
 

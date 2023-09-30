@@ -41,7 +41,7 @@ export class ListarPage implements OnInit {
       },
       (err) =>{
         console.log(err.message)
-        loading.dismiss(); // Corregir esta línea
+        loading.dismiss(); 
       }
      )
   }
