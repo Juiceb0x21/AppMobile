@@ -1,15 +1,6 @@
 {
   "alumnos": [
     {
-      "id": "1",
-      "rut": "1234567-k",
-      "nombre": "carloss",
-      "apellido": "perez",
-      "correo": "tonto@gmial.com",
-      "numerotele": "95845984",
-      "carrera": "ing. en informaticap"
-    },
-    {
       "id": "xlZdZNN",
       "rut": "123123123-k",
       "nombre": "Julio",

@@ -1,40 +1,31 @@
-
 <ion-content>
   <div class="container">
     <ion-card class="card">
-
       <ion-card-content>
-        
-        <form [formGroup]="formularioLogin">
+        <form [formGroup]="loginForm">
           <ion-item>
             <ion-label position="floating">Correo</ion-label>
-            <ion-input formControlName="correo"></ion-input>
+            <ion-input formControlName="email"></ion-input>
           </ion-item>
           <ion-item>
             <ion-label position="floating">Contraseña</ion-label>
-            <ion-input formControlName="password"></ion-input>
+            <ion-input formControlName="password" type="password"></ion-input>
           </ion-item>
         </form>
-
-        <ion-button class="button" color="warning" (click)=login() shape="round">Iniciar sesion</ion-button>
-        <a class="centrado" [routerLink]="['/recuperacion']" style="color: darkgoldenrod">¿Olivdaste tu contraseña?</a>
+        <ion-button class="button" color="warning" (click)="login()" shape="round">Iniciar sesión</ion-button>
+        <a class="centrado" [routerLink]="['/recuperacion']" style="color: darkgoldenrod">¿Olvidaste tu contraseña?</a>
         <br>
-        <H6>si no tienes cuenta, registrate</H6>
+        <h6>Si no tienes cuenta, regístrate</h6>
         <ion-icon name="arrow-down-outline"></ion-icon>
         <br>
       </ion-card-content>
-      
-
-    </ion-card> 
-    
+    </ion-card>
   </div>
-
 </ion-content>
 
 <ion-footer>
   <ion-toolbar slot="end">
     <ion-button fill="outline" shape="round" class="boton" color="dark" [routerLink]="['/logindocente']">Docente</ion-button>
-
     <ion-button class="button" [routerLink]="['/register']" color="dark" shape="round">Registrarse</ion-button>
   </ion-toolbar>
 </ion-footer>
