@@ -41,7 +41,8 @@
       "id": "1",
       "seccion": "DC007",
       "profesor": "Juju",
-      "fecha": "22/09/2023"
+      "fecha": "22/09/2023",
+      "materia": "Programacion web"
     }
   ]
 }

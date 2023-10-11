@@ -139,6 +139,31 @@ const routes: Routes = [
     path: 'eliminar/:id',
     loadChildren: () => import('./pages/apiCRUD/eliminar/eliminar.module').then( m => m.EliminarPageModule)
   },
+  {
+    path: 'agregar_clases',
+    loadChildren: () => import('./pages/CRUDclases/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+  {
+    path: 'crud_clases',
+    loadChildren: () => import('./pages/CRUDclases/crud/crud.module').then( m => m.CrudPageModule)
+  },
+  {
+    path: 'detalle_clases',
+    loadChildren: () => import('./pages/CRUDclases/detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+  {
+    path: 'eliminar_clases',
+    loadChildren: () => import('./pages/CRUDclases/eliminar/eliminar.module').then( m => m.EliminarPageModule)
+  },
+  {
+    path: 'listar_clases',
+    loadChildren: () => import('./pages/CRUDclases/listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'update_clases',
+    loadChildren: () => import('./pages/CRUDclases/update/update.module').then( m => m.UpdatePageModule)
+  },
+
 
 
 
