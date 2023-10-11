@@ -1,13 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>detalle</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{ clase.id }}</ion-card-subtitle>
+      <ion-card-title>Título de la Clase</ion-card-title> <!-- Agrega un título aquí -->
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Agrega el contenido que desees mostrar dentro del ion-card -->
+    </ion-card-content>
+  </ion-card>
 </ion-content>

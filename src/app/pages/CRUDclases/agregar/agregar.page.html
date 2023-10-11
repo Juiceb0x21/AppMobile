@@ -1,13 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>agregar</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agregar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">agregar</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<form action="">
+  <ion-item lines="full">
+    <ion-label position="floating">Seccion</ion-label>
+    <ion-input type="text" name="txtSeccion" [(ngModel)]="newClase.seccion" required></ion-input>
+    <ion-label position="floating">Profesor</ion-label>
+    <ion-input type="text" name="txtProfesor"[(ngModel)]="newClase.profesor"required></ion-input>
+    <ion-label position="floating">fecha</ion-label>
+    <ion-input type="date" name="datefecha" [(ngModel)]="newClase.fecha" required></ion-input>
+    <ion-label position="floating">materia</ion-label>
+    <ion-input type="text" name="txtMateria" [(ngModel)]="newClase.materia" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-button (click)="crearClase()" expand="block" color="success">Agregar</ion-button>
+  </ion-item>
+
+</form>
 </ion-content>

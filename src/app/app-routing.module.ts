@@ -148,11 +148,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/CRUDclases/crud/crud.module').then( m => m.CrudPageModule)
   },
   {
-    path: 'detalle_clases',
+    path: 'detalle_clases/:id',
     loadChildren: () => import('./pages/CRUDclases/detalle/detalle.module').then( m => m.DetallePageModule)
   },
   {
-    path: 'eliminar_clases',
+    path: 'eliminar_clases/:id',
     loadChildren: () => import('./pages/CRUDclases/eliminar/eliminar.module').then( m => m.EliminarPageModule)
   },
   {
@@ -160,7 +160,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/CRUDclases/listar/listar.module').then( m => m.ListarPageModule)
   },
   {
-    path: 'update_clases',
+    path: 'update_clases/:id',
     loadChildren: () => import('./pages/CRUDclases/update/update.module').then( m => m.UpdatePageModule)
   },
 
