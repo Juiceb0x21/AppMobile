@@ -16,7 +16,7 @@ export class DetallePage implements OnInit {
     nombre:"a",
     apellido:"a",
     correo:"a",
-    numerotele:"123",
+    contrasena:"",
     carrera:"a"
   }
 
@@ -46,7 +46,7 @@ export class DetallePage implements OnInit {
           nombre: resp[0].nombre,
           apellido: resp[0].apellido,
           correo: resp[0].correo,
-          numerotele: resp[0].nomerotele,
+          contrasena: resp[0].contrasena,
           carrera: resp[0].carrera
         }
       }

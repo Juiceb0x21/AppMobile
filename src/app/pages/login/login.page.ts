@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { UsuariosrandomService } from 'src/app/services/usuariosrandom.service';
+import { HttpClient } from '@angular/common/http';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -10,42 +10,26 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage {
-
   loginForm: FormGroup;
-  user: any;
-  emailValue?: string;
-  passValue?: string;
-  errorMessage: string = '';
+  usuarios: any[] = []; // Inicializa el arreglo vacío
 
   constructor(
     private router: Router,
-    private usuariosrandom: UsuariosrandomService,
+    private http: HttpClient,
     private formBuilder: FormBuilder,
     public alertController: AlertController
   ) {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(1)]],
+      password: ['', [Validators.required, Validators.minLength(1)]]
     });
   }
 
   ngOnInit() {
-    this.usuariosrandom.getRandomUser().subscribe(
-      (data) => {
-        this.user = data.results[0];
-        this.emailValue = this.user.email;
-        this.passValue = this.user.login.password;
-
-        var usuario = {
-          nombre: this.user.name.first,
-          correo: this.user.email,
-          password: this.user.login.password,
-          rut: this.user.login.username,
-        }
-
-        localStorage.setItem('usuario', JSON.stringify(usuario));
-      }
-    );
+    // Obtener los usuarios desde la URL JSON
+    this.http.get('https://siiiiiii.onrender.com/alumnos').subscribe((data: any) => {
+      this.usuarios = data;
+    });
   }
 
   async login() {
@@ -54,29 +38,23 @@ export class LoginPage {
     console.log('Valores del formulario:');
     console.log(u);
 
-    var usuarioString = localStorage.getItem('usuario');
+    if (this.usuarios) {
+      const usuarioEncontrado = this.usuarios.find((usuario: any) => usuario.correo === u.email && usuario.contrasena === u.password);
 
-    if (usuarioString !== null) {
-      var usuario = JSON.parse(usuarioString);
-
-      console.log('Valores en localStorage:');
-      console.log(usuario);
-
-      if (usuario.correo == u.email && usuario.password == u.password) {
+      if (usuarioEncontrado) {
         console.log('Ingresado');
         localStorage.setItem('ingresado', 'true');
-        this.router.navigate(['/home'])
+        this.router.navigate(['/home']);
       } else {
         const alert = await this.alertController.create({
           header: 'Datos incorrectos',
           message: 'Los datos son incorrectos o no se encuentran datos',
-          buttons: ['Aceptar'],
+          buttons: ['Aceptar']
         });
         await alert.present();
-        return;
       }
     } else {
-      // Manejo de caso cuando no se encuentra el valor en localStorage
+      // Manejo de caso cuando no se encuentra el valor en la URL JSON
     }
   }
 }

@@ -8,25 +8,5 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<form action="">
-  <ion-item lines="full">
-    <ion-label position="floating">rut</ion-label>
-    <ion-input type="text" name="txtRut" [(ngModel)]="newAlumno.rut" required></ion-input>
-    <ion-label position="floating">Nombre</ion-label>
-    <ion-input type="text" name="txtNombre" [(ngModel)]="newAlumno.nombre" required></ion-input>
-    <ion-label position="floating">Apellido</ion-label>
-    <ion-input type="text" name="txtApellido"[(ngModel)]="newAlumno.apellido"required></ion-input>
-    <ion-label position="floating">Correo</ion-label>
-    <ion-input type="text" name="txtCorreo" [(ngModel)]="newAlumno.correo" required></ion-input>
-    <ion-label position="floating">Numero de Telefono</ion-label>
-    <ion-input type="number" name="numTelefono" [(ngModel)]="newAlumno.numerotele" required></ion-input>
-    <ion-label position="floating">Carrera</ion-label>
-    <ion-input type="text" name="txtCarrera"[(ngModel)]="newAlumno.carrera" required></ion-input>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-button (click)="crearAlumno()" expand="block" color="success">Agregar</ion-button>
-  </ion-item>
-
-</form>
+  <ion-button (click)="crear20Usuarios()">Crear 20 Usuarios</ion-button>
 </ion-content>

@@ -30,13 +30,4 @@ export class HomePage implements OnInit {
   login() {
     this.router.navigate(['login'])
   }
-
-  
-  
-
-
-  
-
-  
-
 }

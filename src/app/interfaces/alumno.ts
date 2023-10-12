@@ -3,6 +3,6 @@ export interface Alumno {
             nombre: String,
             apellido: String,
             correo: String,
-            numerotele: String,
+            contrasena: String,
             carrera: String
 }

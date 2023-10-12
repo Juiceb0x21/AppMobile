@@ -16,7 +16,7 @@ export class UpdatePage implements OnInit {
     nombre: "",
     apellido: "",
     correo: "",
-    numerotele: "",
+    contrasena: "",
     carrera: ""
   }
 
@@ -48,7 +48,7 @@ export class UpdatePage implements OnInit {
           nombre: resp[0].nombre,
           apellido: resp[0].apellido,
           correo: resp[0].correo,
-          numerotele: resp[0].numerotele, // Corrected field name
+          contrasena: resp[0].contrasena, // Corrected field name
           carrera: resp[0].carrera
         };
       }
