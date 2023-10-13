@@ -11,17 +11,11 @@ import { IonRouterOutlet } from '@ionic/angular';
 })
 export class HomeCompComponent  implements OnInit {
 
-  usuario:any;
-
-  @Input() nombre!:string;
-  @Input() correo!: string;
 
   constructor(private router: Router, private menu: MenuController, private routerOutlet: IonRouterOutlet, private gestureCtrl: GestureController) { }
 
   ngOnInit() {
-    this.menu.enable(true);
-    this.routerOutlet.swipeGesture = false;
-    this.usuario = JSON.parse(localStorage.getItem('usuario') || "")
+
   }
 
 }

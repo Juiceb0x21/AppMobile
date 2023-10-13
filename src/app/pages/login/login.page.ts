@@ -27,7 +27,7 @@ export class LoginPage {
 
   ngOnInit() {
     // Obtener los usuarios desde la URL JSON
-    this.http.get('https://siiiiiii.onrender.com/alumnos').subscribe((data: any) => {
+    this.http.get('https://aasd-6443-cajw.onrender.com/alumnos').subscribe((data: any) => {
       this.usuarios = data;
     });
   }
@@ -44,7 +44,8 @@ export class LoginPage {
       if (usuarioEncontrado) {
         console.log('Ingresado');
         localStorage.setItem('ingresado', 'true');
-        this.router.navigate(['/home']);
+        this.router.navigate(['/home/', usuarioEncontrado.id]);
+        console.log(this.router.navigate(['/home/', usuarioEncontrado.id]));
       } else {
         const alert = await this.alertController.create({
           header: 'Datos incorrectos',

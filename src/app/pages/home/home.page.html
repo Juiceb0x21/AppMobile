@@ -1,18 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false">
-      </ion-menu-button>
-      
+      <ion-menu-button auto-hide="false"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="hide">
   <div class="img">
-    <img src="assets/img/qr.jpg"/>
-      <app-home-comp nombre="Alex Pavez" correo="al.pavezf@duocuc.cl"></app-home-comp>
-    <ion-button class="margin" [routerLink]="['/detalle']" shape="round" color="warning">Detalle</ion-button> 
+    <img src="assets/img/qr.jpg" />
+    <ion-list>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-text>{{ alumno.nombre }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Correo</ion-label>
+        <ion-text>{{ alumno.correo }}</ion-text>
+      </ion-item>
+    </ion-list>
+    <ion-button class="margin" [routerLink]="['/detalle']" shape="round" color="warning">Detalle</ion-button>
   </div>
 </ion-content>
 
@@ -26,7 +33,7 @@
     </ion-fab-button>
     <ion-fab-button>
       <ion-icon (click)="perfil()" name="person"></ion-icon>
-
     </ion-fab-button>
   </ion-fab-list>
 </ion-fab>
+
